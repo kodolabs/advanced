@@ -45,8 +45,8 @@ module Advanced
 
     alias scope __getobj__
 
-    def call(params = {})
-      super(params.to_h)
+    def call(**params)
+      super(**params)
     end
   end
 end

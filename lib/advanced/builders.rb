@@ -3,7 +3,7 @@ module Advanced
     class Scope < Module
       def initialize(search, name)
         define_method name do |params = {}|
-          search.new(all).call(params)
+          search.new(all).call(**params)
         end
       end
     end

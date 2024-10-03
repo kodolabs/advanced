@@ -5,3 +5,4 @@ gemspec
 
 gem 'pry'
 gem 'activemodel'
+gem 'pipey', git: 'https://github.com/kodolabs/pipey.git', branch: 'ruby-3'

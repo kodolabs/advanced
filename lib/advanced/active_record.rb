@@ -14,20 +14,20 @@ module Advanced
         end
       end
 
-      def where_lt(*args)
-        where_arel(:lt, *args)
+      def where_lt(param, column: param)
+        where_arel(:lt, param, column:)
       end
 
-      def where_gt(*args)
-        where_arel(:gt, *args)
+      def where_gt(param, column: param)
+        where_arel(:gt, param, column:)
       end
 
-      def where_lteq(*args)
-        where_arel(:lteq, *args)
+      def where_lteq(param, column: param)
+        where_arel(:lteq, param, column:)
       end
 
-      def where_gteq(*args)
-        where_arel(:gteq, *args)
+      def where_gteq(param, column: param)
+        where_arel(:gteq, param, column:)
       end
 
       private
